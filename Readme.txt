@@ -15,9 +15,12 @@ License
 This tool is licensed under a CreativeCommons by-nc-sa 3.0 License. I'm always happy about feedback.
 License details: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
-Version
+Changelog
 -------
-1.0 (16.02.2010)
+v1.0 (16.02.2010)
+- Initial release
+v1.1 (pending)
+- Main form is not resizable anymore
  
 Required to run
 ---------------

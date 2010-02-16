@@ -4,14 +4,14 @@
   <description asmv2:publisher="Clipboard2Image" asmv2:product="Clipboard2Image" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Clipboard2Image.exe.manifest" size="3404">
+    <dependentAssembly dependencyType="install" codebase="Clipboard2Image.exe.manifest" size="3035">
       <assemblyIdentity name="Clipboard2Image.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>iY7uZPhIMiv2BCnVfwgwn8iLI5M=</dsig:DigestValue>
+        <dsig:DigestValue>YDyfZX70uwaR7pR8mQM93zlisZo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -122,6 +122,8 @@
 			this.Controls.Add(this.btnSaveFile);
 			this.Controls.Add(this.cbxFileFormat);
 			this.Controls.Add(this.btnClose);
+			this.MaximumSize = new System.Drawing.Size(295, 146);
+			this.MinimumSize = new System.Drawing.Size(295, 146);
 			this.Name = "Form1";
 			this.Text = "Clipboard2Image";
 			this.Load += new System.EventHandler(this.Form1_Load);
