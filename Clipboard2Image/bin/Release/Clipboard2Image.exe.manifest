@@ -49,17 +49,8 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZRjyfHFgvZ4ST7LdBID5XcNjz/4=</dsig:DigestValue>
+        <dsig:DigestValue>6Rz+qqisdeeA2PqA04KdehqaVPs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Readme.txt" size="570">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>eUT6hLmcj/C+J/de8ZILovreiaY=</dsig:DigestValue>
-    </hash>
-  </file>
 </asmv1:assembly>
