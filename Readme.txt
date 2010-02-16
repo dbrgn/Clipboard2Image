@@ -20,7 +20,7 @@ Changelog
 v1.0 (16.02.2010)
 - Initial release
 v1.1 (pending)
-- Main form is not resizable anymore
+- Main window is not resizable anymore
  
 Required to run
 ---------------
