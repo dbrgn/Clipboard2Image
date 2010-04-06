@@ -8,7 +8,7 @@ namespace Clipboard2Image
 	public partial class Form1 : Form
 	{
 		// Clipboard data object
-		public IDataObject data;
+		public IDataObject clipboardData;
 		// Clipboard image data
 		public Image image;
 		
@@ -17,19 +17,27 @@ namespace Clipboard2Image
 			InitializeComponent();
 		}
 
+		/// <summary>
+		/// Main form
+		/// </summary>
+		/// <param name="sender">The source of the event.</param>
+		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			// Set default value for combobox
 			cbxFileFormat.SelectedIndex = 0;
 
+			// If clipboard isn't empty
 			if (Clipboard.GetDataObject() != null)
 			{
-				data = Clipboard.GetDataObject();
+				// Get clipboard data
+				clipboardData = Clipboard.GetDataObject();
 
-				if (data != null && data.GetDataPresent(DataFormats.Bitmap))
+				// If clipboard data is in bitmap format
+				if (clipboardData != null && clipboardData.GetDataPresent(DataFormats.Bitmap))
 				{
 					// Get image data
-					image = (Image)data.GetData(DataFormats.Bitmap, true);
+					image = (Image)clipboardData.GetData(DataFormats.Bitmap, true);
 
 					// Enable buttons
 					btnSaveFile.Enabled = true;
@@ -53,12 +61,21 @@ namespace Clipboard2Image
 			}
 		}
 
+		/// <summary>
+		/// On dropdown-index-change, update the saveFileDialog filetype filter
+		/// </summary>
+		/// <param name="sender">The source of the event.</param>
+		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		private void cbxFileFormat_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			// Set filter for file type
 			saveFileDialog1.Filter = cbxFileFormat.Text + " Image (*." + cbxFileFormat.Text + ")|*." + cbxFileFormat.Text;
 		}
 
+		/// <summary>
+		/// Saves the file to the directory specified in the filePath argument.
+		/// </summary>
+		/// <param name="filePath">The file path.</param>
 		private void saveFile(string filePath)
 		{
 			// Define file format
@@ -89,6 +106,11 @@ namespace Clipboard2Image
 			Close();
 		}
 
+		/// <summary>
+		/// Display saveFile dialog
+		/// </summary>
+		/// <param name="sender">The source of the event.</param>
+		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		private void btnSaveFile_Click(object sender, EventArgs e)
 		{
 			// Display dialog
@@ -102,6 +124,11 @@ namespace Clipboard2Image
 			}
 		}
 
+		/// <summary>
+		/// Quicksave image to Desktop
+		/// </summary>
+		/// <param name="sender">The source of the event.</param>
+		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		private void btnQuicksaveImage_Click(object sender, EventArgs e)
 		{
 			if (image != null)
@@ -120,6 +147,11 @@ namespace Clipboard2Image
 			}
 		}
 
+		/// <summary>
+		/// Close program
+		/// </summary>
+		/// <param name="sender">The source of the event.</param>
+		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		private void btnClose_Click(object sender, EventArgs e)
 		{
 			// Close program

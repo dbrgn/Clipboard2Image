@@ -10,3 +10,4 @@ C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.exe.manifes
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.application
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.exe
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.pdb
+C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.TrustInfo.xml

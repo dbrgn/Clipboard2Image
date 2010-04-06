@@ -12,7 +12,7 @@
     <AssemblyName>Clipboard2Image</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <ManifestCertificateThumbprint>00BFC44DA36F6EA63E71CA4BF2E29377DF24E77A</ManifestCertificateThumbprint>
     <ManifestKeyFile>Clipboard2Image_TemporaryKey.pfx</ManifestKeyFile>
@@ -31,6 +31,8 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -86,6 +88,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Clipboard2Image_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
