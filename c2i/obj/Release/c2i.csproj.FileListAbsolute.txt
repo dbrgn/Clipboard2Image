@@ -1,0 +1,5 @@
+C:\Tools\Clipboard2Image\c2i\bin\Release\c2i.exe
+C:\Tools\Clipboard2Image\c2i\bin\Release\c2i.pdb
+C:\Tools\Clipboard2Image\c2i\obj\Release\ResolveAssemblyReference.cache
+C:\Tools\Clipboard2Image\c2i\obj\Release\c2i.exe
+C:\Tools\Clipboard2Image\c2i\obj\Release\c2i.pdb

@@ -1,5 +1,5 @@
 ﻿/**********************************************
- * Clipboard2Image Tool
+ * Clipboard2Image Tool - Command line version
  * 
  * This tool saves an image from the clipboard to the Desktop or to a specified folder.
  * Supported filetypes: png, jpg, gif, bmp
@@ -33,21 +33,50 @@
 ***********************************************/
 
 using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Text;
 using System.Windows.Forms;
 
-namespace Clipboard2Image
+namespace c2i
 {
-	static class Program
+	// Todo: Document
+	class Program
 	{
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
+		// Clipboard data object
+		public static IDataObject clipboardData;
+		// Clipboard image data
+		public static Image image;
+
 		[STAThread]
-		static void Main()
+		static void Main(string[] args)
 		{
-			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			// Todo: Read arguments
+			if (Clipboard.GetDataObject() != null)
+			{
+				// Get clipboard data
+				clipboardData = Clipboard.GetDataObject();
+
+				// If clipboard data is in bitmap format
+				if (clipboardData != null && clipboardData.GetDataPresent(DataFormats.Bitmap))
+				{
+					// Get image data
+					image = (Image)clipboardData.GetData(DataFormats.Bitmap, true);
+
+					// Todo: Save Image
+				}
+				else
+				{
+					// Show error message
+					Console.WriteLine("Data in clipboard is not an image format");
+				}
+			}
+			else
+			{
+				// Show error message
+				Console.WriteLine("No data in clipboard");
+				clipboardData = Clipboard.GetDataObject();
+			}
 		}
 	}
 }

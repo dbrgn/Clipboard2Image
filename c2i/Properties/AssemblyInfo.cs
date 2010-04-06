@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Clipboard2Image")]
+[assembly: AssemblyTitle("Clipboard2Image command line version")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("616505df-7349-472b-8104-1d8e9e2f3f82")]
+[assembly: Guid("c8c64642-d480-47b3-95ca-3708ad9f0dbf")]
 
 // Version information for an assembly consists of the following four values:
 //

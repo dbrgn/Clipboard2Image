@@ -1,13 +1,8 @@
-C:\Tools\Clipboard2Image\Clipboard2Image\bin\Release\Clipboard2Image.exe.manifest
-C:\Tools\Clipboard2Image\Clipboard2Image\bin\Release\Clipboard2Image.application
 C:\Tools\Clipboard2Image\Clipboard2Image\bin\Release\Clipboard2Image.exe
 C:\Tools\Clipboard2Image\Clipboard2Image\bin\Release\Clipboard2Image.pdb
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\ResolveAssemblyReference.cache
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.Form1.resources
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.Properties.Resources.resources
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.csproj.GenerateResource.Cache
-C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.exe.manifest
-C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.application
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.exe
 C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.pdb
-C:\Tools\Clipboard2Image\Clipboard2Image\obj\Release\Clipboard2Image.TrustInfo.xml
