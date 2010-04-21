@@ -1,4 +1,4 @@
-﻿/**********************************************
+/**********************************************
  * Clipboard2Image Tool
  * 
  * This tool saves an image from the clipboard to the Desktop or to a specified folder.
@@ -13,12 +13,12 @@
  *   
  *   This file is part of Clipboard2Image.
  *   
- *   OpenGrades is free software: you can redistribute it and/or modify
+ *   Clipboard2Image is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
  *   the Free Software Foundation, either version 3 of the License, or
  *   (at your option) any later version.
  *   
- *   OpenGrades is distributed in the hope that it will be useful,
+ *   Clipboard2Image is distributed in the hope that it will be useful,
  *   but WITHOUT ANY WARRANTY; without even the implied warranty of
  *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  *   GNU General Public License for more details.
@@ -26,7 +26,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with Clipboard2Image. If not, see http://www.gnu.org/licenses/.
  * 
- * Version: 1.1 (06.04.2010)
+ * Version: 1.1 (21.04.2010)
  * 
  * Required to run:
  *	- Microsoft .NET Framework 2.0 or higher

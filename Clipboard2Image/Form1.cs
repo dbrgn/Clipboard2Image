@@ -1,16 +1,16 @@
-﻿/**********************************************
+/**********************************************
  * Clipboard2Image saves an image from the clipboard to the Desktop
  * or to a specified folder.
  * Copyright (C) 2010 Danilo Bargen
  * 
  * This file is part of Clipboard2Image.
  * 
- * OpenGrades is free software: you can redistribute it and/or modify
+ * Clipboard2Image is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * OpenGrades is distributed in the hope that it will be useful,
+ * Clipboard2Image is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.

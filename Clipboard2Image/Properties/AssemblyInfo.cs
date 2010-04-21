@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Clipboard2Image")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This tool saves an image from the clipboard to the Desktop or to a specified folder.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Clipboard2Image")]

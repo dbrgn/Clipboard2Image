@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Clipboard2Image command line version")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Clipboard2Image (command line version)")]
+[assembly: AssemblyDescription("This tool saves an image from the clipboard to a specified folder.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Clipboard2Image")]

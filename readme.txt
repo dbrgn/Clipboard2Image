@@ -12,15 +12,28 @@ Web: http://ich-wars-nicht.ch/
 
 License
 -------
-This tool is licensed under a CreativeCommons by-nc-sa 3.0 License. I'm always happy about feedback.
-License details: http://creativecommons.org/licenses/by-nc-sa/3.0/
+Copyright (C) 2010 Danilo Bargen
+
+Clipboard2Image is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Clipboard2Image is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Clipboard2Image. If not, see http://www.gnu.org/licenses/.
 
 Changelog
 -------
 v1.0 (16.02.2010)
 - Initial release
-v1.1 (pending)
+v1.1 (21.04.2010)
 - Main window is not resizable anymore
+- Added a commandline version of the tool (c2i.exe)
  
 Required to run
 ---------------

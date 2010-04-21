@@ -1,5 +1,0 @@
-C:\Tools\Clipboard2Image\c2i\bin\Debug\c2i.exe
-C:\Tools\Clipboard2Image\c2i\bin\Debug\c2i.pdb
-C:\Tools\Clipboard2Image\c2i\obj\Debug\ResolveAssemblyReference.cache
-C:\Tools\Clipboard2Image\c2i\obj\Debug\c2i.exe
-C:\Tools\Clipboard2Image\c2i\obj\Debug\c2i.pdb
