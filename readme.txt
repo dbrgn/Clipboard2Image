@@ -10,6 +10,15 @@ Danilo Bargen
 Contact: gezuru@gmail.com
 Web: http://ich-wars-nicht.ch/
 
+Project Website
+---------------
+http://blog.ich-wars-nicht.ch/clipboard2image/
+
+Usage
+-----
+- Clipboard2Image.exe usage should be self-explanatory
+- To see c2i.exe usage examples, issue `c2i.exe --help` (or just c2i.exe without any options)
+
 License
 -------
 Copyright (C) 2010 Danilo Bargen
