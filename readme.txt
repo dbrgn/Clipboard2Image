@@ -1,5 +1,5 @@
-Clipboard2Image Tool
-====================
+Clipboard2Image Tool v1.2
+=========================
 
 This tool saves an image from the clipboard to the Desktop or to a specified folder.
 Supported filetypes: png, jpg, gif, bmp
@@ -9,6 +9,10 @@ Author
 Danilo Bargen
 Contact: gezuru@gmail.com
 Web: http://ich-wars-nicht.ch/
+
+Contributors
+------------
+- Jens (http://scoreware.de/)
 
 Project Website
 ---------------
@@ -43,6 +47,11 @@ v1.0 (16.02.2010)
 v1.1 (21.04.2010)
 - Main window is not resizable anymore
 - Added a commandline version of the tool (c2i.exe)
+v1.4 (18.12.2010)
+- Program stays open after saving image
+- Refresh button to recheck clipboard
+- Option to store image format and path in registry
+- New program icon
  
 Required to run
 ---------------

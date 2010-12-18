@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clipboard2Image", "Clipboard2Image\Clipboard2Image.csproj", "{4A177760-6D2D-46D2-BD30-94ACA8891131}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c2i", "c2i\c2i.csproj", "{8F8B1349-77F1-45FE-939B-ED1779BE9442}"
