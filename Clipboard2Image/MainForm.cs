@@ -85,7 +85,8 @@ namespace Clipboard2Image
                 }
                 else
                 {
-                    MessageBox.Show("Sorry, I couldn't find any image in the clipboard", "Error");
+                    MessageBox.Show("Sorry, I couldn't find any image in the clipboard", "Error", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     
                     // Disable buttons
                     btnSaveFile.Enabled = false;
@@ -94,7 +95,8 @@ namespace Clipboard2Image
             }
             else
             {
-                MessageBox.Show("Sory, the clipboard is empty", "Error");
+                MessageBox.Show("Sory, the clipboard is empty", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
                 // Disable buttons
                 btnSaveFile.Enabled = false;
@@ -180,9 +182,9 @@ namespace Clipboard2Image
 
         // Close form if checkbox hasn't been checked. Else, return false.
         // Optionally, provide text to show in a message box before closing.
-        private bool conditionalClose(String msgBoxText = "")
+        private bool conditionalClose(String msgBoxText = "", MessageBoxIcon icon = MessageBoxIcon.Information)
         {
-            MessageBox.Show(msgBoxText);
+            MessageBox.Show(msgBoxText, "", MessageBoxButtons.OK, icon);
             if (cbxNoAutoclose.Checked)
             {
                 return false;
