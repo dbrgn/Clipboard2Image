@@ -129,10 +129,11 @@
             this.Controls.Add(this.cbxFileFormat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainForm";
-            this.Text = "Clipboard2Image";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.Name = "MainForm";
+            this.Text = "Clipboard2Image 1.4";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbxFilePreview)).EndInit();
             this.ResumeLayout(false);

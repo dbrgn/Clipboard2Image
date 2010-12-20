@@ -23,17 +23,20 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
+using System.Collections.Specialized;
+using Clipboard2Image.Properties;
 using System.IO;
-using Microsoft.Win32;
 
 namespace Clipboard2Image
 {
 	public partial class MainForm : Form
 	{
 		// Clipboard data object
-		public IDataObject clipboardData;
+        private IDataObject clipboardData;
 		// Clipboard image data
-		public Image image;
+        private Image image;
+        // Config file
+        private Settings settings = Settings.Default;
 		
 		public MainForm()
 		{
@@ -43,8 +46,8 @@ namespace Clipboard2Image
         // Main form load event
 		private void MainForm_Load(object sender, EventArgs e)
 		{
-            // Set default value for combobox
-            cbxFileFormat.SelectedIndex = 0;
+            // Load settings for combobox
+            cbxFileFormat.Text = settings.imageFormat;
 
             LoadClipboardData();
 		}
@@ -62,6 +65,7 @@ namespace Clipboard2Image
             }
         }
 
+        // Loads and displays clipboard data
         private void LoadClipboardData()
         {
             // If clipboard isn't empty
@@ -109,13 +113,20 @@ namespace Clipboard2Image
 		{
 			// Set filter for file type
 			saveFileDialog1.Filter = cbxFileFormat.Text + " Image (*." + cbxFileFormat.Text + ")|*." + cbxFileFormat.Text;
-		}
+        }
 
         // Display saveFile dialog
         private void btnSaveFile_Click(object sender, EventArgs e)
         {
+            // Update folderPath setting if empty
+            if (settings.filePath == "")
+            {
+                settings.filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                settings.Save();
+            }
+
             // Display dialog
-            saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            saveFileDialog1.InitialDirectory = settings.filePath;
             DialogResult dialogResult = saveFileDialog1.ShowDialog();
 
             // If everything's ok, save file
@@ -170,6 +181,11 @@ namespace Clipboard2Image
 
             // Save image to desktop
             image.Save(filePath, fileFormat);
+
+            // Save current settings for later use
+            settings.imageFormat = cbxFileFormat.Text;
+            settings.filePath = new FileInfo(@filePath).DirectoryName;
+            settings.Save();
 
             // Close form
             if (conditionalClose("Successfully saved image.") == false)
