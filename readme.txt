@@ -17,6 +17,7 @@ Contributors
 Project Website
 ---------------
 http://blog.ich-wars-nicht.ch/clipboard2image/
+https://github.com/gwrtheyrn/Clipboard2Image/
 
 Usage
 -----
