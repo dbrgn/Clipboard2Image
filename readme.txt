@@ -47,10 +47,10 @@ v1.0 (16.02.2010)
 v1.1 (21.04.2010)
 - Main window is not resizable anymore
 - Added a commandline version of the tool (c2i.exe)
-v1.4 (18.12.2010)
-- Program stays open after saving image
-- Refresh button to recheck clipboard
-- Option to store image format and path in registry
+v1.4 (20.12.2010)
+- Option to keep program open after saving image
+- Press F5 to reload clipboard data
+- Press ESC to close program
 - New program icon
  
 Required to run

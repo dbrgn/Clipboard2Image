@@ -1,40 +1,42 @@
 ﻿namespace Clipboard2Image
 {
-	partial class MainForm
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class MainForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.cbxFileFormat = new System.Windows.Forms.ComboBox();
             this.btnSaveFile = new System.Windows.Forms.Button();
             this.pbxFilePreview = new System.Windows.Forms.PictureBox();
             this.lblFileFormat = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.btnQuicksaveFile = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.cbxNoAutoclose = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFilePreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,9 +70,9 @@
             // 
             this.pbxFilePreview.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pbxFilePreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxFilePreview.Location = new System.Drawing.Point(174, 9);
+            this.pbxFilePreview.Location = new System.Drawing.Point(173, 9);
             this.pbxFilePreview.Name = "pbxFilePreview";
-            this.pbxFilePreview.Size = new System.Drawing.Size(100, 100);
+            this.pbxFilePreview.Size = new System.Drawing.Size(155, 100);
             this.pbxFilePreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFilePreview.TabIndex = 2;
             this.pbxFilePreview.TabStop = false;
@@ -84,10 +86,6 @@
             this.lblFileFormat.TabIndex = 3;
             this.lblFileFormat.Text = "Image Format";
             // 
-            // saveFileDialog1
-            // 
-            this.saveFileDialog1.Filter = "All files|*.*";
-            // 
             // btnQuicksaveFile
             // 
             this.btnQuicksaveFile.Enabled = false;
@@ -99,49 +97,59 @@
             this.btnQuicksaveFile.UseVisualStyleBackColor = true;
             this.btnQuicksaveFile.Click += new System.EventHandler(this.btnQuicksaveImage_Click);
             // 
-            // btnClose
+            // cbxNoAutoclose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Location = new System.Drawing.Point(240, 81);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(21, 23);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.cbxNoAutoclose.Location = new System.Drawing.Point(12, 115);
+            this.cbxNoAutoclose.Name = "cbxNoAutoclose";
+            this.cbxNoAutoclose.Size = new System.Drawing.Size(155, 23);
+            this.cbxNoAutoclose.TabIndex = 12;
+            this.cbxNoAutoclose.Text = "Don\'t auto-close window";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(166, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Press F5 to reload clipboard data";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(279, 114);
+            this.ClientSize = new System.Drawing.Size(337, 141);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbxNoAutoclose);
             this.Controls.Add(this.btnQuicksaveFile);
             this.Controls.Add(this.lblFileFormat);
             this.Controls.Add(this.pbxFilePreview);
             this.Controls.Add(this.btnSaveFile);
             this.Controls.Add(this.cbxFileFormat);
-            this.Controls.Add(this.btnClose);
-            this.MaximumSize = new System.Drawing.Size(295, 152);
-            this.MinimumSize = new System.Drawing.Size(295, 152);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Clipboard2Image";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.KeyPreview = true;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbxFilePreview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.ComboBox cbxFileFormat;
-		private System.Windows.Forms.Button btnSaveFile;
-		private System.Windows.Forms.PictureBox pbxFilePreview;
-		private System.Windows.Forms.Label lblFileFormat;
-		private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-		private System.Windows.Forms.Button btnQuicksaveFile;
-		private System.Windows.Forms.Button btnClose;
-	}
+        private System.Windows.Forms.ComboBox cbxFileFormat;
+        private System.Windows.Forms.Button btnSaveFile;
+        private System.Windows.Forms.PictureBox pbxFilePreview;
+        private System.Windows.Forms.Label lblFileFormat;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button btnQuicksaveFile;
+        private System.Windows.Forms.CheckBox cbxNoAutoclose;
+        private System.Windows.Forms.Label label1;
+    }
 }
 
