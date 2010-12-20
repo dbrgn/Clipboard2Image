@@ -26,7 +26,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with Clipboard2Image. If not, see http://www.gnu.org/licenses/.
  * 
- * Version: 1.2 (14.12.2010)
+ * Version: 1.4 (20.12.2010)
  * 
  * Required to run:
  *	- Microsoft .NET Framework 2.0 or higher

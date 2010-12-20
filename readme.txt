@@ -1,4 +1,4 @@
-Clipboard2Image Tool v1.2
+Clipboard2Image Tool v1.4
 =========================
 
 This tool saves an image from the clipboard to the Desktop or to a specified folder.
@@ -52,7 +52,7 @@ v1.4 (20.12.2010)
 - Press F5 to reload clipboard data
 - Press ESC to close program
 - New program icon
-- Saves settings for image format and file path to user profile
+- Save settings for image format and file path to user profile
  
 Required to run
 ---------------
